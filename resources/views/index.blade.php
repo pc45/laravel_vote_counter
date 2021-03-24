@@ -44,14 +44,15 @@
             </div>
          </div>
 
-         <div class="flex py-2 py-6">
-            <a href="#" class="flex-none">
-               <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-            </a>
-            <div class="mx-4">
+         <div class="flex flex-1 px-2 py-6">
+            <div class="flex-none">
+               <a href="#" >
+                  <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+               </a>
+            </div>
+            <div class="w-full mx-4">
                <h4 class="text-xl font-semibold"><a href="#" class="hover:underline">A Random Title Can Go Here</a></h4>
-               <div class="text-gray-600 mt-3 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt dolore eos fugit hic molestiae nemo nulla perferendis quidem totam. Architecto aut blanditiis culpa debitis, dolores ducimus impedit incidunt ipsum modi, voluptas voluptates voluptatibus? Accusamus debitis delectus deleniti distinctio eaque eligendi fuga illum iusto molestias obcaecati, odit omnis perferendis provident quibusdam quisquam quos recusandae repellat reprehenderit vel voluptate. Aliquid architecto consectetur eaque error ipsa ipsam ipsum minima, neque quasi quo quos reprehenderit, veniam voluptatem? Blanditiis sint tempora veniam! Ad assumenda at ipsam laudantium officia placeat quo sint ut. Architecto asperiores est id nam nisi porro quaerat quos, totam voluptas voluptatibus!</div>
-               <div class="flex items-center justify-between mt-6">
+               <div class="text-gray-600 mt-3 line-clamp-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>               <div class="flex items-center justify-between mt-6">
                   <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
                      <div>10 hours ago</div>
                      <div>&bull;</div>
@@ -63,7 +64,7 @@
                      <div class="bg-gray-200 text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
                         Open
                      </div>
-                     <button class="relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 transition duration-150 ease-in py-2 px-4">
+                     <button class="relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 border transition duration-150 ease-in py-2 px-4">
                         <svg fill="currentColor" width="24" height="6"><path d="M2.97.061A2.969 2.969 0 000 3.031 2.968 2.968 0 002.97 6a2.97 2.97 0 100-5.94zm9.184 0a2.97 2.97 0 100 5.939 2.97 2.97 0 100-5.939zm8.877 0a2.97 2.97 0 10-.003 5.94A2.97 2.97 0 0021.03.06z">
                         <ul class="text-left absolute w-44 font-semibold bg-white shadow-dialogue rounded-xl py-3 ml-8">
                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as spam</a></li>
@@ -92,7 +93,7 @@
             </div>
          </div>
 
-         <div class="flex py-2 py-6">
+         <div class="flex px-2 py-6">
             <a href="#" class="flex-none">
                <img src="https://source.unsplash.com/200x200/?face&crop=face&v=2" alt="avatar" class="w-14 h-14 rounded-xl">
             </a>
@@ -140,7 +141,7 @@
             </div>
          </div>
 
-         <div class="flex py-2 py-6">
+         <div class="flex px-2 py-6">
             <a href="#" class="flex-none">
                <img src="https://source.unsplash.com/200x200/?face&crop=face&v=3" alt="avatar" class="w-14 h-14 rounded-xl">
             </a>
