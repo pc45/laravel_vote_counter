@@ -9,12 +9,10 @@
     </div>
 
     <div class="mt-4 idea-container bg-white rounded-xl flex">
-
-
         <div class="flex flex-1 px-4 py-6">
             <div class="flex-none">
                 <a href="#" >
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=2" alt="avatar" class="w-14 h-14 rounded-xl">
                 </a>
             </div>
             <div class="w-full mx-4">
@@ -74,5 +72,101 @@
         </div>
     </div>
 
+    <div class="comments-container relative space-y-6 ml-22 my-8 mt-1 pt-4">
+        <div class="mt-4 relative comment-container bg-white rounded-xl flex">
+            <div class="flex flex-1 px-4 py-6">
+                <div class="flex-none">
+                    <a href="#" >
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="w-full mx-4">
+                    {{--<h4 class="text-xl font-semibold"><a href="#" class="hover:underline">A Random Title Can Go Here</a></h4>--}}
+                    <div class="text-gray-600 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsum quidem sapiente vitae? Delectus eveniet harum ipsam neque nihil, non optio placeat, quas quisquam sint sunt voluptatum! A asperiores assumenda beatae cupiditate dolorem, exercitationem facere incidunt laborum magni maiores minima modi nemo perspiciatis quis quisquam quos, reprehenderit, repudiandae rerum soluta suscipit tempore totam unde vitae? Corporis cumque itaque nihil pariatur rem repellat veritatis voluptatem. Aliquam animi atque cum cumque cupiditate dolore dolorem doloribus earum eius eligendi enim, et ex exercitationem facere illo libero maiores molestias nemo neque officiis perspiciatis quibusdam recusandae reprehenderit rerum sint tempore temporibus, totam unde voluptates voluptatum?</div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div class="font-bold text-gray-900">Pete Croke</div>
+                            <div>&bull;</div>
+                            <div>10 hours ago</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+
+                            <button class="hidden relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 border transition duration-150 ease-in py-2 px-4">
+                                <svg fill="currentColor" width="24" height="6"><path d="M2.97.061A2.969 2.969 0 000 3.031 2.968 2.968 0 002.97 6a2.97 2.97 0 100-5.94zm9.184 0a2.97 2.97 0 100 5.939 2.97 2.97 0 100-5.939zm8.877 0a2.97 2.97 0 10-.003 5.94A2.97 2.97 0 0021.03.06z">
+                                        <ul class="text-left absolute w-44 font-semibold bg-white shadow-dialogue rounded-xl py-3 ml-8">
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as spam</a></li>
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in">Delete Post</a></li>
+                                        </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--- end comment container --->
+
+        </div> <!--- end comments container --->
+        <div class="is-admin mt-4 relative comment-container bg-white rounded-xl flex">
+            <div class="flex flex-1 px-4 py-6">
+                <div class="flex-none">
+                    <a href="#" >
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=3" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                    <div class="text-center text-blue uppercase text-xxs font-bold mt-1">Admin</div>
+                </div>
+                <div class="w-full mx-4">
+                    <h4 class="text-xl font-semibold"><a href="#" class="hover:underline">A Random Title Can Go Here</a></h4>
+                    <div class="text-gray-600 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsum quidem sapiente vitae? Delectus eveniet harum ipsam neque nihil, non optio placeat, quas quisquam sint sunt voluptatum! A asperiores assumenda beatae cupiditate dolorem, exercitationem facere incidunt laborum magni maiores minima modi nemo perspiciatis quis quisquam quos, reprehenderit, repudiandae rerum soluta suscipit tempore totam unde vitae? Corporis cumque itaque nihil pariatur rem repellat veritatis voluptatem. Aliquam animi atque cum cumque cupiditate dolore dolorem doloribus earum eius eligendi enim, et ex exercitationem facere illo libero maiores molestias nemo neque officiis perspiciatis quibusdam recusandae reprehenderit rerum sint tempore temporibus, totam unde voluptates voluptatum?</div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div class="font-bold text-blue">Pete Croke</div>
+                            <div>&bull;</div>
+                            <div>10 hours ago</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+
+                            <button class="hidden relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 border transition duration-150 ease-in py-2 px-4">
+                                <svg fill="currentColor" width="24" height="6"><path d="M2.97.061A2.969 2.969 0 000 3.031 2.968 2.968 0 002.97 6a2.97 2.97 0 100-5.94zm9.184 0a2.97 2.97 0 100 5.939 2.97 2.97 0 100-5.939zm8.877 0a2.97 2.97 0 10-.003 5.94A2.97 2.97 0 0021.03.06z">
+                                        <ul class="text-left absolute w-44 font-semibold bg-white shadow-dialogue rounded-xl py-3 ml-8">
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as spam</a></li>
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in">Delete Post</a></li>
+                                        </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--- end comment container --->
+
+        </div> <!--- end comments container --->
+        <div class="mt-4 relative comment-container bg-white rounded-xl flex">
+            <div class="flex flex-1 px-4 py-6">
+                <div class="flex-none">
+                    <a href="#" >
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=4" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="w-full mx-4">
+                    {{--<h4 class="text-xl font-semibold"><a href="#" class="hover:underline">A Random Title Can Go Here</a></h4>--}}
+                    <div class="text-gray-600 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsum quidem sapiente vitae? Delectus eveniet harum ipsam neque nihil, non optio placeat, quas quisquam sint sunt voluptatum! A asperiores assumenda beatae cupiditate dolorem, exercitationem facere incidunt laborum magni maiores minima modi nemo perspiciatis quis quisquam quos, reprehenderit, repudiandae rerum soluta suscipit tempore totam unde vitae? Corporis cumque itaque nihil pariatur rem repellat veritatis voluptatem. Aliquam animi atque cum cumque cupiditate dolore dolorem doloribus earum eius eligendi enim, et ex exercitationem facere illo libero maiores molestias nemo neque officiis perspiciatis quibusdam recusandae reprehenderit rerum sint tempore temporibus, totam unde voluptates voluptatum?</div>
+                    <div class="flex items-center justify-between mt-6">
+                        <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
+                            <div class="font-bold text-gray-900">Pete Croke</div>
+                            <div>&bull;</div>
+                            <div>10 hours ago</div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+
+                            <button class="hidden relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 border transition duration-150 ease-in py-2 px-4">
+                                <svg fill="currentColor" width="24" height="6"><path d="M2.97.061A2.969 2.969 0 000 3.031 2.968 2.968 0 002.97 6a2.97 2.97 0 100-5.94zm9.184 0a2.97 2.97 0 100 5.939 2.97 2.97 0 100-5.939zm8.877 0a2.97 2.97 0 10-.003 5.94A2.97 2.97 0 0021.03.06z">
+                                        <ul class="text-left absolute w-44 font-semibold bg-white shadow-dialogue rounded-xl py-3 ml-8">
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in block">Mark as spam</a></li>
+                                            <li><a href="" class="hover:bg-gray-100 px-5 py-3 transition duration-150 ease-in">Delete Post</a></li>
+                                        </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--- end comment container --->
+
+        </div> <!--- end comments container --->
+    </div> <!--- end comments --->
 
 </x-app-layout>
