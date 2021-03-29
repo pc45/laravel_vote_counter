@@ -3,6 +3,10 @@
 @import 'tailwindcss/utilities';
 
 
+[x-cloak] {
+  display: none !important;
+}
+
 /* vertical line to the left of the comments */
 .comments-container::before {
   position: absolute;
@@ -47,5 +51,6 @@
   left:-58px;
   background: theme('colors.purple');
   opacity:1;
-
 }
+
+

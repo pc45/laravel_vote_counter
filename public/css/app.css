@@ -25234,6 +25234,10 @@ select {
   -webkit-line-clamp: unset;
 }
 
+[x-cloak] {
+  display: none !important;
+}
+
 /* vertical line to the left of the comments */
 
 .comments-container::before {
@@ -147325,4 +147329,6 @@ select {
     -webkit-line-clamp: unset;
   }
 }
+
+
 
