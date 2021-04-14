@@ -14,11 +14,28 @@ class IdeaShow extends Component
     public function mount(Idea $idea, $votesCount) {
         $this->idea = $idea;
         $this->votesCount = $votesCount;
-        $this->hasVoted = $idea->voted_by_user;
+        $this->hasVoted = $idea->isVotedByUser(auth()->user());
     }
 
     public function render()
     {
         return view('livewire.idea-show');
+    }
+
+    public function vote()
+    {
+        if(!auth()->check()){
+            redirect(route('login'));
+        }
+
+        if ($this->hasVoted) {
+            $this->idea->unvote(auth()->user());
+            $this->votesCount--;
+            $this->hasVoted = false;
+        } else {
+            $this->idea->vote(auth()->user());
+            $this->votesCount++;
+            $this->hasVoted = true;
+        }
     }
 }

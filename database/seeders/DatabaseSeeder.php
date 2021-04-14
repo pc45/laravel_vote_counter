@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use App\Models\Idea;
 use App\Models\Status;
 use App\Models\Vote;
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
            'name' => 'Pete',
            'email'=>'pete@petecroke.com',
+           'password' => Hash::make('password'),
 
         ]);
 

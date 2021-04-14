@@ -20,4 +20,22 @@ class IdeaIndex extends Component
     {
         return view('livewire.idea-index');
     }
+
+    public function vote()
+    {
+        if(!auth()->check()){
+            redirect(route('login'));
+        }
+
+        if ($this->hasVoted) {
+            $this->idea->unvote(auth()->user());
+            $this->votesCount--;
+            $this->hasVoted = false;
+        } else {
+            $this->idea->vote(auth()->user());
+            $this->votesCount++;
+            $this->hasVoted = true;
+        }
+
+    }
 }
