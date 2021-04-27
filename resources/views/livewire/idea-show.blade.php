@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="w-full mx-2 md:mx-4">
-                <h4 class="text-xl font-semibold"><a href="#" class="hover:underline">{{$idea->title}}</a></h4>
+                <h4 class="text-xl font-semibold mt-2 md:mt-0">{{$idea->title}}</h4>
                 <div class="text-gray-600 mt-3 line-clamp-3">{{$idea->description}}</div>
                 <div class="flex flex-col md:flex-row md:items-center justify-between mt-6">
                     <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
