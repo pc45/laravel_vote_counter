@@ -1,17 +1,15 @@
 <div
     x-data
     @click="
-                const clicked = $event.target
-
-                const target = clicked.tagName.toLowerCase()
-
-                const ignores = ['button','svg','path','a']
-
-                if (!ignores.includes(target)){
-                    clicked.closest('.idea-container').querySelector('.idea-link').click()
-                }
-            "
-    class="idea-container hover:shadow-card transition duration-150 ease-in bg-white rounded-xl flex cursor-pointer">
+        const clicked = $event.target
+        const target = clicked.tagName.toLowerCase()
+        const ignores = ['button', 'svg', 'path', 'a']
+        if (! ignores.includes(target)) {
+            clicked.closest('.idea-container').querySelector('.idea-link').click()
+        }
+    "
+    class="idea-container hover:shadow-card transition duration-150 ease-in bg-white rounded-xl flex cursor-pointer"
+>
     <div class="hidden md:block border-r border-gray-100 px-5 py-8">
         <div class="text-center">
             <div class="font-semibold text-2xl @if($hasVoted) text-blue @endif">
@@ -23,14 +21,10 @@
         </div>
 
         <div class="mt-8">
-            @if($hasVoted)
-                <button
-                    wire:click.prevent="vote"
-                    class="w-20 border text-white border-blue hover:border-gray-400 transition duration-150 ease-in bg-blue font-bold text-xxs uppercase rounded-xl px-4 py-3">Voted</button>
+            @if ($hasVoted)
+                <button wire:click.prevent="vote" class="w-20 bg-blue text-white border border-blue hover:bg-blue-hover font-bold text-xs uppercase rounded-xl transition duration-150 ease-in px-4 py-3">Voted</button>
             @else
-                <button
-                    wire:click.prevent="vote"
-                    class="w-20 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in bg-gray-200 font-bold text-xxs uppercase rounded-xl px-4 py-3">Vote</button>
+                <button wire:click.prevent="vote" class="w-20 bg-gray-200 border border-gray-200 hover:border-gray-400 font-bold text-xs uppercase rounded-xl transition duration-150 ease-in px-4 py-3">Vote</button>
             @endif
         </div>
     </div>
@@ -56,7 +50,7 @@
                 </div>
                 <div x-data="{ isOpen:false }"
                      class="flex items-center space-x-2 mt-4 md:mt-0">
-                    <div class="{{$idea->status->classes}} text-xxs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
+                    <div class="{{$idea->status->classes}} text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
                         {{$idea->status->name}}
                     </div>
                     <button @click="isOpen = !isOpen"
@@ -80,14 +74,20 @@
                         <div class="text-xxs font-semibold leading-none text-gray-400 ">Votes</div>
                     </div>
 
-                    @if($hasVoted)
+                    @if ($hasVoted)
                         <button
                             wire:click.prevent="vote"
-                            class="w-20 border border-blue text-white hover:border-gray-400 transition duration-150 ease-in bg-gray-200 font-bold text-xxs uppercase rounded-xl px-4 py-3 -mx-5">Voted</button>
+                            class="w-20 bg-blue text-white border border-blue font-bold text-xxs uppercase rounded-xl hover:bg-blue-hover transition duration-150 ease-in px-4 py-3 -mx-5"
+                        >
+                            Voted
+                        </button>
                     @else
                         <button
                             wire:click.prevent="vote"
-                            class="w-20 border border-gray-200 hover:border-gray-400 transition duration-150 ease-in bg-gray-200 font-bold text-xxs uppercase rounded-xl px-4 py-3 -mx-5">Vote</button>
+                            class="w-20 bg-gray-200 border border-gray-200 font-bold text-xxs uppercase rounded-xl hover:border-gray-400 transition duration-150 ease-in px-4 py-3 -mx-5"
+                        >
+                            Vote
+                        </button>
                     @endif
                 </div>
             </div>
