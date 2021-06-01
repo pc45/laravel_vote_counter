@@ -39,19 +39,19 @@ class DatabaseSeeder extends Seeder
         Status::factory()->create(['name'=> 'Implemented', 'classes'=>'bg-green text-white']);
         Status::factory()->create(['name'=> 'Closed', 'classes'=>'bg-red text-white']);
 
-        Idea::factory(100)->create();
+        Idea::factory(100)->existing()->create();
 
-        //Generate unique votes. Ensure user_id and idea_id for each row
-        foreach(range(1,20) as $user_id){
-            foreach(range(1,100) as $idea_id) {
-                if($idea_id % 2 == 0)
-                {
-                    Vote::factory()->create( [
+        // Generate unique votes. Ensure idea_id and user_id are unique for each row
+        foreach (range(1, 20) as $user_id) {
+            foreach (range(1, 100) as $idea_id) {
+                if ($idea_id % 2 === 0) {
+                    Vote::factory()->create([
                         'user_id' => $user_id,
                         'idea_id' => $idea_id,
-                    ] );
+                    ]);
                 }
             }
         }
+
     }
 }
