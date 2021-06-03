@@ -26,7 +26,9 @@
                         <div class="{{$idea->status->classes}} text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 px-4 py-2">
                             {{$idea->status->name}}
                         </div>
-                        <div class="relative">
+
+                        @auth
+                            <div class="relative">
                             <button
                                 @click="isOpen = !isOpen"
                                 class="relative bg-gray-100 hover:bg-gray-200 rounded-full h-7 w-14 border transition duration-150 ease-in py-2 px-4">
@@ -56,9 +58,21 @@
                                                     "
                                            class="hover:bg-gray-100 px-5 py-3 block transition duration-150 ease-in">Delete Idea</a></li>
                                 @endcan
-                                <li><a href="" class="hover:bg-gray-100 px-5 py-3 block transition duration-150 ease-in">Mark as spam</a></li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            @click.prevent="
+                                                isOpen = false
+                                                $dispatch('custom-show-mark-idea-as-spam-modal')
+                                            "
+                                            class="hover:bg-gray-100 block transition duration-150 ease-in px-5 py-3"
+                                        >
+                                            Mark as Spam
+                                        </a>
+                                    </li>
                             </ul>
                         </div>
+                        @endauth
                     </div>
                     <div class="flex items-center md:hidden mt-4 md:mt-0">
                         <div class="bg-gray-100 text-center rounded-xl h-10 px-4 py-2 pr-8">
